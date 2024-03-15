@@ -27,7 +27,7 @@ namespace TaskApp
         {
             int res = 1;
             if(f == 0) {
-                return 1;
+                return res;
             }
             else {
                 for(int i = 1; i <= f; i++) {
@@ -37,12 +37,12 @@ namespace TaskApp
             }
             return res;
         }
-        static async Task<int> GetFactorialAsync(int f)
+        static async Task GetFactorialAsync(int f)
         {
             Console.WriteLine("GetFactorialAsync запустился");
             int res = await Task.Run(() => GetFactorial(f));
             Console.WriteLine($"GetFactorialAsync отработал = {f}");
-            return res;
+            //return res;
         }
     }
 }
