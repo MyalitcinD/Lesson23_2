@@ -11,14 +11,14 @@ namespace TaskApp
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число факториал каторого нужно вычислить");
-            int f =Convert.ToInt32( Console.ReadLine());
+            int f = Convert.ToInt32(Console.ReadLine());
 
             //int res = GetFactorialAsync(f).Result;
             GetFactorialAsync(f);
             GetFactorialAsync(f);
             //Console.WriteLine($"Факториал обычный = {GetFactorial(f)}");
-            
-            
+
+
             Console.WriteLine("Main закончил");
             Console.ReadKey();
         }
